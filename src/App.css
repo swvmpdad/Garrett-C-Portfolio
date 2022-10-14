@@ -1,38 +1,315 @@
-.App {
+:root {
+  --dark-purple: rgb(0, 12, 9);
+  --lime-green: rgb(5, 247, 69);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--dark-purple);
+  color: var(--lime-green);
+}
+
+h3 {
+  text-decoration: none;
+  color: var(--lime-green);
+}
+
+p {
+  text-decoration: none;
+  color: var(--lime-green);
+}
+
+/* header styling */
+
+header {
+  background: black;
+  display: flex;
+  padding: 20px 35px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  top: 0;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--lime-green);
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header ul li a {
+  margin: 10px 15px;
+  font-size: 1.5vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  font-size: 55px;
+  color: lightcyan;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Jumbotron Styling */
+
+.jumbotron {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  position: relative;
+}
+
+.jumbotron div {
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+}
+
+/* body styling */
+
+h2 {
+  font-size: 45px;
+}
+
+/* about me styling */
+
+.about-me{
+  margin: auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  border-bottom: 3px solid var(--lime-green);
+}
+
+.about-me h2 {
+  text-align: right;
+}
+
+.about-me div {
+  margin: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 50%;
+}
+
+.about-me img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.section-title {
+  margin: 50px 50px;
+  padding: 50px 50px;
+  border-right: 2px solid var(--lime-green);
+  text-align: right;
+}
+
+.section-title h2 {
+  width: 200px;
+}
+
+/* Projects Styling */
+
+.my-projects {
+  margin: auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 2 0 500px;
+  border-bottom: 3px solid var(--lime-green);
+}
+
+.my-projects div {
+  margin: 50px 50px;
+  vertical-align: middle;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  flex: 2 0 500px;
+  justify-content: center;
+}
+
+.projects a {
+  display: flex;
+  justify-content: space-evenly;
+  text-decoration: none;
+  flex: 2 1;
+}
+
+.project {
+  border: 3px solid var(--lime-green);
+  border-radius: 10px;
+  position: relative;
+  min-height: 200px;
+  min-width: 200px;
+  max-width: 600px;
+  flex-grow: 2;
+}
+
+.project-name {
+  margin-left: -20px;
+  border: 0.5px solid var(--lime-green);
+  border-radius: 10px;
+  background-color: black;
+  margin-top: 120px;
+  width: 50%;
+}
+
+.project-name h3, .project-name p {
+  margin-left: 5px;
+}
+
+/* Contact Me styling */
+
+.contact-me {
+  margin: auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  border-bottom: 3px solid var(--lime-green);
+}
+
+.contact-me div {
+  margin: 50px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  vertical-align: middle;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-info div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: var(--lime-green);
+}
+
+/* footer styling */
+
+footer {
+  margin: 20px 50px;
+}
+
+footer p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media screen and (max-width: 980px) {
+  header {
+      justify-content: center;
+      position: relative;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  header h1 {
+      width: 100%;
+      text-align: center;
+  }
+
+  header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+  }
+
+  header nav ul li a {
+      font-size: 30px;
+  }
+
+  .jumbotron h2 {
+      font-size: 30px;
+  }
+
+  .about-me {
+      justify-content: center;
+      align-items: center;
+  }
+
+  .about-me div {
+      max-width: 100%;
+  }
+
+  .about p {
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .section-title {
+      border-right: none;
+      border-bottom: 2px solid var(--lime-green);
+  }
+
+  .section-title h2 {
+      text-align: center;
+  }
+
+  .about {
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+  }
+
+  .my-projects {
+      justify-content: center;
+      align-items: center;
+  }
+
+  .contact-me {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .contact-info {
+      flex-direction: column;
+      width: 80%;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 768px) {
+  header nav ul li a {
+      font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .about-me, .my-projects, .contact-me {
+      margin: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+  }
+
+  section {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  header nav ul li a {
+      font-size: 20px;
   }
 }
