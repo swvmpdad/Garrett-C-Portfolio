@@ -2,11 +2,11 @@ import React from "react";
 
 const Footer = () => {
     return (
-        <footer>
+        <div>
             <p>
                 Made with love by me.
             </p>
-        </footer>
+        </div>
     );
 };
 

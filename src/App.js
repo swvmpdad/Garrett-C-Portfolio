@@ -1,13 +1,37 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from './pages/About';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
 
 function App() {
   return (
-  <div>
-    <Header />
-    <Footer />
-  </div>
+    <>
+        <Header />
+          <div className="flex-column justify-flex-start min-100-vh">
+              <div className="container">
+                  <Routes>
+                      <Route
+                          path='/'
+                          element={<About />}
+                      />
+                      <Route
+                          path='/portfolio'
+                          element={<Portfolio />}
+                      />
+                      <Route
+                          path='/contact'
+                          element={<Contact />}
+                      />
+                  </Routes>
+              </div>
+          </div>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   );
 }
 

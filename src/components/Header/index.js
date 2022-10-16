@@ -1,28 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <header>
-            <h1>
-                Garrett Campbell
-            </h1>
-
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-
-                    <li>
-                        <a href="#my-projects">My Projects</a>
-                    </li>
-
-                    <li>
-                        <a href="#contact-me">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <header className="mb-4 py-2 flex-row align-center">
+        <div className="container flex-row justify-space-between-lg justify-center align-right">
+            <h1>Garrett Campbell</h1>
+          <nav className="text-center">
+              <>
+                <Link to="/">About</Link>
+                <Link to="/portfolio">Portfolio</Link>
+                <Link to="/contact">Contact</Link>
+              </>
+          </nav>
+        </div>
+      </header>
     );
 };
 
