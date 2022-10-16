@@ -2,7 +2,7 @@
   --primary-color: rgb(244, 241, 222);
   --secondary-color: rgb(61, 64, 91);
   --tertiary-color: rgb(129, 178, 154);
-  --quaternary-color: rgb(242, 204, 143);
+  --quaternary-color: rgb(224, 122, 95);
 }
 
 * {
@@ -35,8 +35,9 @@ header {
 }
 
 header h1 {
-  color: var(--quaternary-color);
-  text-shadow: rgb(0, 0, 0, 0.5);
+  font-size: 3vw;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -59,7 +60,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   flex: 1;
-  border-bottom: 3px solid var(--secondary-color);
 }
 
 .about-me h2 {
@@ -80,25 +80,17 @@ h2 {
 }
 
 .section-title {
-  margin: 50px 50px;
-  padding: 50px 50px;
-  border-right: 2px solid var(--secondary-color);
-  text-align: right;
+  border-bottom: 2px solid var(--secondary-color);
+  text-align: center;
 }
 
 .section-title h2 {
-  width: 200px;
+  font-size: 2.5vw;
 }
 
 /* Projects Styling */
 
-.my-projects {
-  margin: auto 50px;
-  display: flex;
-  flex-wrap: wrap;
-  flex: 2 0 500px;
-  border-bottom: 3px solid var(--secondary-color);
-}
+
 
 .my-projects div {
   margin: 50px 50px;
@@ -126,21 +118,29 @@ h2 {
   border-radius: 10px;
   position: relative;
   min-height: 200px;
-  min-width: 200px;
+  min-width: 325px;
   max-width: 600px;
   flex-grow: 2;
 }
 
 .project-name {
-  margin-left: -20px;
+  background-color: var(--tertiary-color);
+  margin-left: 0px;
   border: 0.5px solid var(--secondary-color);
   border-radius: 10px;
-  margin-top: 120px;
-  width: 50%;
+  margin-top: 200px;
+  margin-bottom: 0px;
+  width: 100%;
 }
 
 .project-name h3, .project-name p {
   margin-left: 5px;
+}
+
+.project-name a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 1.25vw
 }
 
 /* Contact Me styling */
@@ -175,7 +175,6 @@ h2 {
 /* footer styling */
 
 footer {
-  background-color: var(--tertiary-color);
   margin: 20px 50px;
 }
 
