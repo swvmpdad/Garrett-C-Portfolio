@@ -1,4 +1,5 @@
 import React from "react";
+import github from "./github.png";
 
 const Portfolio = () => {
     return (
@@ -10,62 +11,56 @@ const Portfolio = () => {
                     <section className="projects">
                             <div className="project" id="run-buddy">
                                 <figure className="project-name">                                   
-                                    <h3>Run Buddy</h3>
                                     <p>
                                         HTML/CSS
                                     </p>
-                                    <a href="https://swvmpdad.github.io/run-buddy/">Deployed</a>
-                                    <a href="">Git Repo</a>
+                                    <a target="blank" href="https://swvmpdad.github.io/run-buddy/"><h3>Run Buddy</h3></a>
+                                    <a target="blank" href="https://github.com/swvmpdad/run-buddy"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                                 </figure>
                             </div>
                         <div className="project" id="taskinator">
                             <figure className="project-name">                                
-                                <h3>Taskinator</h3>
                                 <p>
                                     JavaScript
                                 </p>
-                                <a href="https://swvmpdad.github.io/taskinator/">Deployed</a>
-                                <a href="">Git Repo</a>
+                                <a target="blank" href="https://swvmpdad.github.io/taskinator/"><h3>Taskinator</h3></a>
+                                <a target="blank" href="https://github.com/swvmpdad/taskinator"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                             </figure>
                         </div>
                         <div className="project" id="battle-robot">
                             <figure className="project-name"> 
-                                <h3>Robot Gladiators</h3>
                                 <p>
                                     JavaScript
                                 </p>
-                                <a href="https://swvmpdad.github.io/robot-gladiators/">Deployed</a>
-                                <a href="">Git Repo</a>
+                                <a target="blank" href="https://swvmpdad.github.io/robot-gladiators/"><h3>Robot Gladiators</h3></a>
+                                <a target="blank" href="https://github.com/swvmpdad/robot-gladiators"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                             </figure>
                         </div>
                         <div className="project" id="workin-hard">
                             <figure className="project-name">                               
-                                <h3>Workin Hard</h3>
                                 <p>
                                     JavaScript
                                 </p>
-                                <a href="https://swvmpdad.github.io/workin-hard/">Deployed</a>
-                                <a href="">Git Repo</a>
+                                <a target="blank" href="https://swvmpdad.github.io/workin-hard/"><h3>Workin Hard</h3></a>
+                                <a target="blank" href="https://github.com/swvmpdad/workin-hard"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                             </figure>
                         </div>
                         <div className="project" id="showbiz-baby">
                             <figure className="project-name">                               
-                                <h3>Showbiz Baby</h3>
                                 <p>
                                     HTML, JavaScript, Bulma, CSS
                                 </p>
-                                <a href="https://swvmpdad.github.io/showbiz-baby/">Deployed</a>
-                                <a href="">Git Repo</a>
+                                <a target="blank" href="https://swvmpdad.github.io/showbiz-baby/"><h3>Showbiz Baby</h3></a>
+                                <a target="blank" href="https://github.com/swvmpdad/run-buddy"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                             </figure>
                         </div>
                         <div className="project" id="social-strength">
                             <figure className="project-name">
-                                <h3>Social Strength</h3>
                                 <p>
                                     MySQL, JavaScript, Handlebars, Node.js
                                 </p>
-                                <a href="https://social-strength.herokuapp.com">Deployed</a>
-                                <a href="">Git Repo</a>
+                                <a target="blank" href="https://social-strength.herokuapp.com"><h3>Social Strength</h3></a>
+                                <a target="blank" href="https://github.com/swvmpdad/social-strength"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                             </figure>
                         </div>
                     </section>

@@ -31,7 +31,7 @@ const ResumePage = () => {
                 <ul>
                     {skills.map((skill) => {
                             return (
-                                <li>{skill}</li>
+                                <li key={skill}>{skill}</li>
                             );
                         }
                     )}

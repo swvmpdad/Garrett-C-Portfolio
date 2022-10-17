@@ -183,6 +183,10 @@ h2 {
   width: 100%;
 }
 
+.project-name p {
+  color: var(--secondary-color);
+}
+
 .project-name h3, .project-name p {
   margin-left: 5px;
 }
@@ -190,11 +194,16 @@ h2 {
 .project-name a {
   text-decoration: none;
   color: var(--secondary-color);
-  font-size: 1.25vw
+  font-size: 1.25vw;
+  padding-bottom: 5px;
 }
 
-.project-name a:hover {
-  color: var(--quaternary-color);
+.project-name a h3:hover {
+  color: var(--active-link);
+}
+
+.project-name img:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* Contact Me styling */
@@ -254,13 +263,21 @@ footer p {
   text-align: center;
 }
 
+footer a {
+  padding: 5px;
+}
+
+footer img:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 980px) {
   header {
       justify-content: center;
       position: relative;
   }
 
-  header h1 {
+  header h1, h4 {
       width: 100%;
       text-align: center;
   }

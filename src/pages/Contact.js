@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Resume from "../components/Resume";
 import { validateEmail } from '../utils/helpers';
 
 function ContactForm() {
@@ -33,7 +32,9 @@ function ContactForm() {
     function handleSubmit(e) {
         e.preventDefault();
         console.log(formState);
-        
+        e.target.name.value = '';
+        e.target.email.value = '';
+        e.target.message.value = '';
     }
 
     return(
@@ -43,7 +44,7 @@ function ContactForm() {
             </div>
             <div id="contact-form" className="row d-flex justify-content-center">
                 <div className="col-md-6 text-center">
-                    <form action="mailto:swvmpdad@gmail.com" method="POST" encType="text/plain" className="col justify-space-between align-items-center" id="contact-form" onSubmit={handleSubmit}>
+                    <form className="col justify-space-between align-items-center" id="contact-form" onSubmit={handleSubmit}>
                         <div>
                             <label htmlFor="name">Name:</label><br />
                             <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
