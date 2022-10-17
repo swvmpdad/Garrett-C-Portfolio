@@ -13,6 +13,7 @@ const Header = () => {
                 <NavLink activeclassname="active" exact="true" to="/about">About</NavLink>
                 <NavLink activeclassname="active" exact="true" to="/portfolio">Portfolio</NavLink>
                 <NavLink activeclassname="active" exact="true" to="/contact">Contact</NavLink>
+                <NavLink activeclassname="active" exact="true" to="/resume">Resume</NavLink>
               </>
           </nav>
         </div>

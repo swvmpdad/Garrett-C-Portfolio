@@ -67,9 +67,6 @@ function ContactForm() {
                     </form>
                 </div>
             </div>
-            <div id="resume" className="row text-center mt-3">
-                <Resume />
-            </div>
         </section>
     );
 };

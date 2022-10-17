@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
+import ResumePage from './pages/Resume';
 
 function App() {
   return (
@@ -24,6 +25,10 @@ function App() {
                       <Route
                           path='/contact'
                           element={<Contact />}
+                      />
+                      <Route
+                          path='/resume'
+                          element={<ResumePage />}
                       />
                       <Route
                           path='*'
