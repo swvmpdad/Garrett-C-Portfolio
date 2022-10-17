@@ -1,8 +1,9 @@
 :root {
-  --primary-color: rgb(244, 241, 222);
-  --secondary-color: rgb(61, 64, 91);
-  --tertiary-color: rgb(129, 178, 154);
-  --quaternary-color: rgb(224, 122, 95);
+  --primary-color: rgb(186, 205, 176);
+  --secondary-color: rgb(243, 232, 238);
+  --tertiary-color: rgb(114, 155, 121);
+  --quaternary-color: rgb(71, 91, 99);
+  --active-link: rgb(46, 44, 47)
 }
 
 * {
@@ -15,7 +16,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--primary-color);
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 h3 {
@@ -25,17 +26,26 @@ h3 {
 
 p {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 /* header styling */
 
 header {
   background: var(--tertiary-color);
+  color: var(--secondary-color);
+  background-image: url(./assets/images/background.jpg);
+  
 }
 
 header h1 {
   font-size: 3vw;
+  color: var(--secondary-color);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+header h4 {
+  font-size: 1.5vw;
   color: var(--secondary-color);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
@@ -45,6 +55,14 @@ header a {
   padding: 5px;
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+header a:hover {
+  color: var(--quaternary-color)
+}
+
+.active {
+  color: var(--active-link);
 }
 
 /* body styling */
@@ -88,9 +106,42 @@ h2 {
   font-size: 2.5vw;
 }
 
+#profile-photo {
+  padding: 150px;
+  background-image: url(./assets/images/me.jpg);
+  background-size: contain;
+}
+
 /* Projects Styling */
+#run-buddy {
+  background-image: url(./assets/images/runbuddy.png);
+  background-size: contain;
+}
 
+#taskinator {
+  background-image: url(./assets/images/taskinator.png);
+  background-size: contain;
+}
 
+#battle-robot {
+  background-image: url(./assets/images/robotglad.jpg);
+  background-size: contain;
+}
+
+#workin-hard {
+  background-image: url(./assets/images/workinhard.png);
+  background-size: contain;
+}
+
+#showbiz-baby {
+  background-image: url(./assets/images/ShowbizBabyLogo.png);
+  background-size: contain;
+}
+
+#social-strength {
+  background-image: url(./assets/images/socialstrength.jpg);
+  background-size: contain;
+}
 
 .my-projects div {
   margin: 50px 50px;
@@ -109,7 +160,6 @@ h2 {
 .projects a {
   display: flex;
   justify-content: space-evenly;
-  text-decoration: none;
   flex: 2 1;
 }
 
@@ -143,6 +193,10 @@ h2 {
   font-size: 1.25vw
 }
 
+.project-name a:hover {
+  color: var(--quaternary-color);
+}
+
 /* Contact Me styling */
 
 .contact-me {
@@ -151,6 +205,9 @@ h2 {
   flex-wrap: wrap;
   flex: 1;
   border-bottom: 3px solid var(--secondary-color);
+}
+input, textarea {
+  background-color: var(--secondary-color);
 }
 
 .contact-me div {
@@ -170,6 +227,17 @@ h2 {
 .contact-info a {
   text-decoration: none;
   color: var(--secondary-color);
+}
+
+#contact-form button {
+  padding: 5px;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+#resume a{
+  text-decoration: none;
+  color: var(--quaternary-color);
 }
 
 /* footer styling */
@@ -242,16 +310,7 @@ footer p {
       align-items: center;
   }
 
-  .contact-me {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
 
-  .contact-info {
-      flex-direction: column;
-      width: 80%;
-  }
 }
 
 @media screen and (max-width: 768px) {

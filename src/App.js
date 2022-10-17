@@ -14,7 +14,7 @@ function App() {
               <div className="container">
                   <Routes>
                       <Route
-                          path='/'
+                          path='/about'
                           element={<About />}
                       />
                       <Route
@@ -24,6 +24,10 @@ function App() {
                       <Route
                           path='/contact'
                           element={<Contact />}
+                      />
+                      <Route
+                          path='*'
+                          element={<About />}
                       />
                   </Routes>
               </div>
