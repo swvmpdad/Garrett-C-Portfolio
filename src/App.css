@@ -240,6 +240,10 @@ input, textarea {
   color: var(--quaternary-color);
 }
 
+ul {
+  list-style: none;
+}
+
 /* footer styling */
 
 footer {
