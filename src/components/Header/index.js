@@ -10,10 +10,10 @@ const Header = () => {
             <div className="header-photo"></div>
           <nav className="text-center">
               <>
-                <NavLink activeclassname="active" exact="true" to="/portfoliosis/about">About</NavLink>
-                <NavLink activeclassname="active" exact="true" to="/portfoliosis/portfolio">Portfolio</NavLink>
-                <NavLink activeclassname="active" exact="true" to="/portfoliosis/contact">Contact</NavLink>
-                <NavLink activeclassname="active" exact="true" to="/portfoliosis/resume">Resume</NavLink>
+                <NavLink activeclassname="active" exact="true" to="/about">About</NavLink>
+                <NavLink activeclassname="active" exact="true" to="/portfolio">Portfolio</NavLink>
+                <NavLink activeclassname="active" exact="true" to="/contact">Contact</NavLink>
+                <NavLink activeclassname="active" exact="true" to="/resume">Resume</NavLink>
               </>
           </nav>
         </div>
