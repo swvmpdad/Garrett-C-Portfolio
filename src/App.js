@@ -15,23 +15,23 @@ function App() {
               <div className="container">
                   <Routes>
                       <Route
-                          path='/about'
+                          path='/portfoliosis/about'
                           element={<About />}
                       />
                       <Route
-                          path='/portfolio'
+                          path='/portfoliosis/portfolio'
                           element={<Portfolio />}
                       />
                       <Route
-                          path='/contact'
+                          path='/portfoliosis/contact'
                           element={<Contact />}
                       />
                       <Route
-                          path='/resume'
+                          path='/portfoliosis/resume'
                           element={<ResumePage />}
                       />
                       <Route
-                          path='/*'
+                          path='/portfoliosis/*'
                           element={<About />}
                       />
                   </Routes>

@@ -39,7 +39,7 @@ const Portfolio = () => {
                         <div className="project" id="crustulum-bucket">
                             <figure className="project-name">                               
                                 <p>
-                                    MERN, GraphQL, Mongoose, JWT, React
+                                    MERN, GraphQL, Mongoose, React
                                 </p>
                                 <a target="blank" href="https://crustulum-bucket.herokuapp.com"><h3>Crustulum Bucket</h3></a>
                                 <a target="blank" href="https://github.com/swvmpdad/Crustulum-Bucket"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
