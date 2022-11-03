@@ -128,8 +128,8 @@ h2 {
   background-size: contain;
 }
 
-#workin-hard {
-  background-image: url(./assets/images/workinhard.png);
+#crustulum-bucket {
+  background-image: url(./assets/images/bucket.png);
   background-size: contain;
 }
 
@@ -164,8 +164,10 @@ h2 {
 }
 
 .project {
-  border: 3px solid var(--secondary-color);
-  border-radius: 10px;
+  background: var(--secondary-color);
+  box-shadow:  22px 22px 66px #a59ea2,
+             -22px -22px 66px #ffffff;
+  border-radius: 49px;
   position: relative;
   min-height: 200px;
   min-width: 325px;
@@ -176,8 +178,9 @@ h2 {
 .project-name {
   background-color: var(--tertiary-color);
   margin-left: 0px;
-  border: 0.5px solid var(--secondary-color);
-  border-radius: 10px;
+  border-radius: 49px;
+  box-shadow: inset 23px 23px 14px #615d5f,
+            inset -23px -23px 14px #ffffff;
   margin-top: 200px;
   margin-bottom: 0px;
   width: 100%;
@@ -185,6 +188,8 @@ h2 {
 
 .project-name p {
   color: var(--secondary-color);
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 .project-name h3, .project-name p {

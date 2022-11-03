@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { validateEmail } from '../utils/helpers';
+const formUrl = 'docs.google.com/forms/d/1VGB5sFaFMRu5FRQFoDzTYmfCNhku9BPwpgez7uBPkXM/';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -36,6 +37,7 @@ function ContactForm() {
         e.target.email.value = '';
         e.target.message.value = '';
     }
+
 
     return(
         <section>

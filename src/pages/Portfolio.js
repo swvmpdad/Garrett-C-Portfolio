@@ -9,15 +9,15 @@ const Portfolio = () => {
                 </div>
                 <section id="my-projects" className="my-projects">
                     <section className="projects">
-                            <div className="project" id="run-buddy">
-                                <figure className="project-name">                                   
-                                    <p>
-                                        HTML/CSS
-                                    </p>
-                                    <a target="blank" href="https://swvmpdad.github.io/run-buddy/"><h3>Run Buddy</h3></a>
-                                    <a target="blank" href="https://github.com/swvmpdad/run-buddy"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
-                                </figure>
-                            </div>
+                        <div className="project" id="run-buddy">
+                            <figure className="project-name">                                   
+                                <p>
+                                    HTML/CSS
+                                </p>
+                                <a target="blank" href="https://swvmpdad.github.io/run-buddy/"><h3>Run Buddy</h3></a>
+                                <a target="blank" href="https://github.com/swvmpdad/run-buddy"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
+                            </figure>
+                        </div>
                         <div className="project" id="taskinator">
                             <figure className="project-name">                                
                                 <p>
@@ -36,13 +36,13 @@ const Portfolio = () => {
                                 <a target="blank" href="https://github.com/swvmpdad/robot-gladiators"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                             </figure>
                         </div>
-                        <div className="project" id="workin-hard">
+                        <div className="project" id="crustulum-bucket">
                             <figure className="project-name">                               
                                 <p>
-                                    JavaScript
+                                    MERN, GraphQL, Mongoose, JWT, React
                                 </p>
-                                <a target="blank" href="https://swvmpdad.github.io/workin-hard/"><h3>Workin Hard</h3></a>
-                                <a target="blank" href="https://github.com/swvmpdad/workin-hard"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
+                                <a target="blank" href="https://crustulum-bucket.herokuapp.com"><h3>Crustulum Bucket</h3></a>
+                                <a target="blank" href="https://github.com/swvmpdad/Crustulum-Bucket"><img src={github} height="32px" width="32px" alt="GitHub logo"></img></a>
                             </figure>
                         </div>
                         <div className="project" id="showbiz-baby">
