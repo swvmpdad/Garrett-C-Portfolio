@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
@@ -15,23 +15,23 @@ function App() {
               <div className="container">
                   <Routes>
                       <Route
-                          path='/portfoliosis/about'
+                          path='/Garrett-C-Portfolio/about'
                           element={<About />}
                       />
                       <Route
-                          path='/portfoliosis/portfolio'
+                          path='/Garrett-C-Portfolio/portfolio'
                           element={<Portfolio />}
                       />
                       <Route
-                          path='/portfoliosis/contact'
+                          path='/Garrett-C-Portfolio/contact'
                           element={<Contact />}
                       />
                       <Route
-                          path='/portfoliosis/resume'
+                          path='/Garrett-C-Portfolio/resume'
                           element={<ResumePage />}
                       />
                       <Route
-                          path='/portfoliosis/*'
+                          path='/Garrett-C-Portfolio/*'
                           element={<About />}
                       />
                   </Routes>
