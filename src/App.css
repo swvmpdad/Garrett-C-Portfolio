@@ -109,7 +109,7 @@ h2 {
 #profile-photo {
   padding: 150px;
   background-image: url(./assets/images/me.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 /* Projects Styling */
